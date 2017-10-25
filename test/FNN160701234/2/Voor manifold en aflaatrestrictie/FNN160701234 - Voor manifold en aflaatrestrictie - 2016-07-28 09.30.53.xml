@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<TestSequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="FrontManifoldExhaustRestrictionTestSequence" Name="Voor manifold en aflaatrestrictie" SerialNumber="FNN160701234" OperatorID="123" PCID="PC449" AddtionalInformation1="" AddtionalInformation2="" Conclusion="NotTested">
+  <Tests>
+    <Test xsi:type="LeakageFrontTest" Name="Lektest voorkant" Date="2016-07-28T09:30:29.0167662+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="LeakageFrontTestStep001" Name="Aansluiten voor lektest voorkant" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="LeakageFrontTestStep002" Name="Testen van de voorkant op lekkage" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="CuffValveBaseTest" Name="Gedeeltelijke Cuff Valve test" Date="2016-07-28T09:30:29.0167662+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="CuffValveBaseTestStep001" Name="Aansluiten voor gedeeltelijke Cuff Valve test" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="CuffValveBaseTestStep002" Name="Cuff valves testen" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="FilterExhaustTest" Name="Aflaat restrictie test" Date="2016-07-28T09:30:29.0177662+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="FilterExhaustTestStep001" Name="Aansluiten voor aflaat restrictie test" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="FilterExhaustTestStep002" Name="Aflaatfilter testen" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+  </Tests>
+</TestSequence>

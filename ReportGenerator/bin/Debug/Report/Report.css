@@ -1,0 +1,222 @@
+﻿/* Generic document layout */
+
+body
+{
+    font-family: Calibri, Verdana, Arial, Sans-Serif;
+    font-size: 14pt;
+}
+
+h2
+{
+    margin-top: 2em;
+}
+
+table caption, h3
+{
+    text-align: left;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+table
+{
+    table-layout: fixed;
+    margin-top: 2em;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td
+{
+    overflow: visible;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+/* Header */
+
+img#logo 
+{
+    width: 45%;
+    display: inline;
+    vertical-align: top;
+}
+
+div#address
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 4cm;
+}
+
+div#header
+{
+    border-bottom: 0.5mm solid black;
+    padding-bottom: 1em;
+}
+
+/* Conclusions */
+
+.conclusion_failed, .error
+{
+    background-color: #ff8080;
+    color: #000000;
+}
+
+.conclusion_passed
+{
+    background-color: #f0fff0;
+    color: #006000;
+}
+
+.conclusion_nottested, .conclusion_unknown
+{
+    background-color: #ffff80;
+    color: #000000;
+}
+
+span.conclusion
+{
+    font-weight: bold;
+}
+
+/* Summary table */
+
+table.summary th, table.summary td
+{
+    border: 0.5mm solid black;
+    padding: .75ex 1ex;
+    border-spacing: 0;
+}
+
+table.summary th 
+{
+    text-align: left;
+    padding-right: 1em;
+    width: 25%;
+}
+
+/* Results table */
+
+table.results
+{
+    table-layout: auto;
+}
+
+table.results th, table.results, td
+{
+    border: 0.5mm solid black;
+    padding: .75ex 1ex;
+    border-spacing: 0;
+}
+
+table.results tr.test
+{
+    background-color: #c0c0c0;
+}
+
+table.results tr.teststep
+{
+    background-color: #f0f0f0;
+}
+
+table.results tr.teststep td
+{
+    padding-top: 1.5ex;
+    padding-bottom: 1.5ex;
+}
+
+table.results tr.result
+{
+    background-color: #ffffff;
+    font-size: 90%;
+}
+
+table.results td.description
+{
+    border-right: 0;
+    width: auto;
+}
+
+table.results tr.result td.description
+{
+    padding-left: 3em;
+}
+
+table.results td.measurement
+{
+    border-left: 0;
+    white-space: nowrap;
+}
+
+table.results td.conclusion
+{
+    text-align: center;
+    width: 15%;
+}
+
+.value
+{
+    display: inline-block;
+}
+
+.measurement
+{
+    text-align: right;
+}
+
+/* Version formatting */
+
+dl.version
+{
+    padding: 0;
+    margin: 0;
+    font-size: 90%;
+}
+
+dl.version dt
+{
+    font-style: italic;
+}
+
+
+/* Debug code dump */
+
+code div.tag-body
+{
+    margin-left: 4ex;
+}
+
+/* PDF-specifics */
+
+@media print
+{
+    a
+    {
+        color: inherit;
+        text-decoration: inherit;
+    }
+    
+    section#xml
+    {
+        display: none;
+    }
+    
+    tr 
+    {
+        page-break-inside: avoid;
+    }
+    
+    header
+    {
+        page-break-after: always;
+    }
+    
+    section
+    {
+        page-break-before: always;
+    }
+}

@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<TestSequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="NanoCoreTestSequence" Name="Nano Core tests" SerialNumber="FNN160700015" OperatorID="MJN" PCID="PC484" AddtionalInformationRequestText1="PCA connector serienummer" AddtionalInformationRequestText2="Polsband batchnummer" AddtionalInformation1="01" AddtionalInformation2="01" Conclusion="Failed">
+  <Tests>
+    <Test xsi:type="LEDControllerTest" Name="LED controller test" Date="2016-07-22T11:18:52.4278588+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="LEDControllerTestStep001" Name="Aansluiten voor LED controller test" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="LEDControllerTestStep002" Name="LED driver testen" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="PlethysmographTest" Name="Plethysmograaf test" Date="2016-07-22T11:18:52.4338594+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="PlethysmographTestStep001" Name="Aansluiten voor Plethysmograaf test" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="PlethysmographTestStep002" Name="Plethysmograaf testen ondergrens" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="PlethysmographTestStep003" Name="Plethysmograaf testen midden" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="PlethysmographTestStep004" Name="Plethysmograaf testen bovengrens" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="HCUAmplifierTest" Name="HCU versterker test" Date="2016-07-22T11:18:52.4358596+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="HCUAmplifierTestStep001" Name="Aansluiten voor HCU versterker test" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="HCUAmplifierTestStep002" Name="HCU versterker testen op -75 mmHg" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="HCUAmplifierTestStep003" Name="HCU versterker testen op 0 mmHg" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="HCUAmplifierTestStep004" Name="HCU versterker testen op 75 mmHg" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="TemperatureCompleteTest" Name="Temperatuursensor test" Date="2016-07-22T11:18:52.4368597+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="TemperatureCompleteTestStep001" Name="Aansluiten voor temperatuurtest" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="TemperatureCompleteTestStep002" Name="Temperatuursensor testen" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="GroundImpendanceTest" Name="Electrische aarde test" Date="2016-07-22T11:18:52.4378598+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="GroundImpendanceTestStep001" Name="Meten van de electrische aarde impendantie" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="EndTestCuffDeflation" Name="Eindtest leeglopen Cuff" Date="2016-07-22T11:18:52.4388599+02:00" Source="FAT-tool; V0.0.0" Conclusion="Failed">
+      <Steps>
+        <TestStep xsi:type="EndTestCuffDeflationStep001" Name="Aansluiten voor eindtest leeglopen Cuff 1" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Nano Core ready" Remarks="Nano Core in Service Mode" Conclusion="Passed" ResultValue="true" />
+            <Result xsi:type="BooleanResult" Name="Finger Simulator ready" Remarks="Finger Simulator ready" Conclusion="Passed" ResultValue="true" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="EndTestCuffDeflationStep002" Name="Cuff 1 op druk brengen" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Current Cuff: Cuff1" Remarks="" Conclusion="Passed" ResultValue="true" />
+            <Result xsi:type="ValueResult" Name="Cuff Pressure" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="249" MaxValue="251" MeasuredValue="249.92533487348504" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="EndTestCuffDeflationStep003" Name="Cuff 1 leeglopen met afgesloten luchtfilter" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Current Cuff: Cuff1" Remarks="" Conclusion="Passed" ResultValue="true" />
+            <Result xsi:type="ValueResult" Name="Cuff Pressure" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="-15" MaxValue="15" MeasuredValue="0.013476812829430616" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="EndTestCuffDeflationStep004" Name="Cuff 2 op druk brengen" Conclusion="Failed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Current Cuff: Cuff1" Remarks="" Conclusion="Failed" ResultValue="false" />
+            <Result xsi:type="ValueResult" Name="Cuff Pressure" Remarks="" Conclusion="Failed" Units="mmHg" MinValue="240" MaxValue="260" MeasuredValue="185.4086750326924" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="EndTestCuffDeflationStep005" Name="Cuff 2 leeglopen met afgesloten luchtfilter" Conclusion="Failed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Current Cuff: Cuff1" Remarks="" Conclusion="Failed" ResultValue="false" />
+            <Result xsi:type="ValueResult" Name="Cuff Pressure" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="-15" MaxValue="15" MeasuredValue="-0.32987942209109161" />
+          </Results>
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="EndTestRiseFallTime" Name="Eindtest drukrijs en -valtijd" Date="2016-07-22T11:18:52.4408601+02:00" Source="FAT-tool; V0.0.0" Conclusion="Passed">
+      <Steps>
+        <TestStep xsi:type="EndTestRiseFallTimeStep001" Name="Aansluiten voor eindtest Cuff 1" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Nano Core ready" Remarks="Nano Core in Service Mode" Conclusion="Passed" ResultValue="true" />
+            <Result xsi:type="BooleanResult" Name="Fin ger Simulator ready" Remarks="Finger Simulator ready" Conclusion="Passed" ResultValue="true" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="EndTestRiseFallTimeStep002" Name="Cuff 1 drukreactietijd bepalen" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Average rise time" Remarks="" Conclusion="Passed" Units="ms" MinValue="0" MaxValue="15" MeasuredValue="13.999999999896318" />
+            <Result xsi:type="ValueResult" Name="Average fall time" Remarks="" Conclusion="Passed" Units="ms" MinValue="0" MaxValue="15" MeasuredValue="13.43182890850585" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="EndTestRiseFallTimeStep003" Name="Cuff 2 drukreactietijd bepalen" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Average rise time" Remarks="" Conclusion="Passed" Units="ms" MinValue="0" MaxValue="15" MeasuredValue="14.750000000094587" />
+            <Result xsi:type="ValueResult" Name="Average fall time" Remarks="" Conclusion="Passed" Units="ms" MinValue="0" MaxValue="15" MeasuredValue="13.71698709967859" />
+          </Results>
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="EndTestPerformance" Name="Eindtest prestatie" Date="2016-07-22T11:18:52.4428603+02:00" Source="FAT-tool; V0.0.0" Conclusion="Failed">
+      <Steps>
+        <TestStep xsi:type="EndTestPerformanceStep001" Name="Aansluiten voor eindtest Cuff 1" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Nano Core ready" Remarks="Nano Core in Service Mode" Conclusion="Passed" ResultValue="true" />
+            <Result xsi:type="BooleanResult" Name="Finger Simulator ready" Remarks="Finger Simulator ready" Conclusion="Passed" ResultValue="true" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="EndTestPerformanceStep002" Name="Cuff 1 normale meetprestatie" Conclusion="Failed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Current Cuff: Cuff1" Remarks="" Conclusion="Passed" ResultValue="true" />
+            <Result xsi:type="ValueResult" Name="Programmed patient" Remarks="" Conclusion="Passed" Units="" MinValue="1" MaxValue="1" MeasuredValue="1" />
+            <Result xsi:type="ValueResult" Name="Programmed systole" Remarks="" Conclusion="Failed" Units="mmHg" MinValue="125" MaxValue="125" MeasuredValue="124" />
+            <Result xsi:type="ValueResult" Name="Programmed diastole" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="78" MaxValue="78" MeasuredValue="78" />
+            <Result xsi:type="ValueResult" Name="Measured systole" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="122" MaxValue="128" MeasuredValue="127.30000000000001" />
+            <Result xsi:type="ValueResult" Name="Measured diastole" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="75" MaxValue="81" MeasuredValue="78.6" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="EndTestPerformanceStep003" Name="Cuff 1 meetprestatie bij extreme MAP verandering" Conclusion="Failed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Programmed systole" Remarks="" Conclusion="Failed" Units="mmHg" MinValue="140" MaxValue="140" MeasuredValue="124" />
+            <Result xsi:type="ValueResult" Name="Programmed diastole" Remarks="" Conclusion="Failed" Units="mmHg" MinValue="20" MaxValue="20" MeasuredValue="78" />
+            <Result xsi:type="ValueResult" Name="Programmed patient" Remarks="" Conclusion="Passed" Units="" MinValue="1" MaxValue="1" MeasuredValue="1" />
+            <Result xsi:type="ValueResult" Name="Programmed Sine frequency" Remarks="" Conclusion="Passed" Units="Hz" MinValue="0.045" MaxValue="0.055" MeasuredValue="0.05000000074505806" />
+            <Result xsi:type="ValueResult" Name="Programmed heart beat" Remarks="" Conclusion="Passed" Units="Hz" MinValue="59" MaxValue="61" MeasuredValue="60" />
+            <Result xsi:type="ValueResult" Name="Programmed systole" Remarks="" Conclusion="Failed" Units="mmHg" MinValue="135" MaxValue="135" MeasuredValue="140" />
+            <Result xsi:type="ValueResult" Name="Programmed diastole" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="20" MaxValue="20" MeasuredValue="20" />
+            <Result xsi:type="ValueResult" Name="Programmed Sine amplitude" Remarks="" Conclusion="Failed" Units="mmHg" MinValue="160" MaxValue="160" MeasuredValue="0" />
+            <Result xsi:type="ValueResult" Name="Programmed systole" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="300" MaxValue="300" MeasuredValue="300" />
+            <Result xsi:type="ValueResult" Name="Programmed diastole" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="180" MaxValue="180" MeasuredValue="180" />
+            <Result xsi:type="ValueResult" Name="Programmed Sine amplitude" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="0" MaxValue="0" MeasuredValue="0" />
+            <Result xsi:type="ValueResult" Name="Programmed systole" Remarks="" Conclusion="Failed" Units="mmHg" MinValue="295" MaxValue="295" MeasuredValue="300" />
+            <Result xsi:type="ValueResult" Name="Programmed diastole" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="180" MaxValue="180" MeasuredValue="180" />
+            <Result xsi:type="ValueResult" Name="Programmed Sine amplitude" Remarks="" Conclusion="Failed" Units="mmHg" MinValue="-160" MaxValue="-160" MeasuredValue="0" />
+            <Result xsi:type="ValueResult" Name="Programmed systole" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="140" MaxValue="140" MeasuredValue="140" />
+            <Result xsi:type="ValueResult" Name="Programmed diastole" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="20" MaxValue="20" MeasuredValue="20" />
+            <Result xsi:type="ValueResult" Name="Programmed Sine amplitude" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="0" MaxValue="0" MeasuredValue="0" />
+            <Result xsi:type="ValueResult" Name="7th systole on sine wave" Remarks="" Conclusion="Failed" Units="mmHg" MinValue="185" MaxValue="191" MeasuredValue="135.4" />
+            <Result xsi:type="ValueResult" Name="8th systole on sine wave" Remarks="" Conclusion="Failed" Units="mmHg" MinValue="230" MaxValue="236" MeasuredValue="238" />
+            <Result xsi:type="ValueResult" Name="17th diastole on sine wave" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="127" MaxValue="133" MeasuredValue="131.4" />
+            <Result xsi:type="ValueResult" Name="18th diastole on sine wave" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="83" MaxValue="89" MeasuredValue="87.100000000000009" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="EndTestPerformanceStep004" Name="Cuff 2 normale meetprestatie" Conclusion="Failed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Current Cuff: Cuff2" Remarks="" Conclusion="Passed" ResultValue="true" />
+            <Result xsi:type="ValueResult" Name="Programmed patient" Remarks="" Conclusion="Failed" Units="" MinValue="1" MaxValue="1" MeasuredValue="2" />
+            <Result xsi:type="ValueResult" Name="Programmed systole" Remarks="" Conclusion="Failed" Units="mmHg" MinValue="125" MaxValue="125" MeasuredValue="187" />
+            <Result xsi:type="ValueResult" Name="Programmed diastole" Remarks="" Conclusion="Failed" Units="mmHg" MinValue="78" MaxValue="78" MeasuredValue="92" />
+            <Result xsi:type="ValueResult" Name="Measured systole" Remarks="" Conclusion="Failed" Units="mmHg" MinValue="122" MaxValue="128" MeasuredValue="184.8" />
+            <Result xsi:type="ValueResult" Name="Measured diastole" Remarks="" Conclusion="Failed" Units="mmHg" MinValue="75" MaxValue="81" MeasuredValue="90.5" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="EndTestPerformanceStep005" Name="Cuff 2 meetprestatie bij extreme MAP verandering" Conclusion="Failed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Programmed systole" Remarks="" Conclusion="Failed" Units="mmHg" MinValue="140" MaxValue="140" MeasuredValue="187" />
+            <Result xsi:type="ValueResult" Name="Programmed diastole" Remarks="" Conclusion="Failed" Units="mmHg" MinValue="20" MaxValue="20" MeasuredValue="92" />
+            <Result xsi:type="ValueResult" Name="Programmed patient" Remarks="" Conclusion="Failed" Units="" MinValue="1" MaxValue="1" MeasuredValue="2" />
+            <Result xsi:type="ValueResult" Name="Programmed Sine frequency" Remarks="" Conclusion="Failed" Units="Hz" MinValue="0.045" MaxValue="0.055" MeasuredValue="10" />
+            <Result xsi:type="ValueResult" Name="Programmed heart beat" Remarks="" Conclusion="Passed" Units="Hz" MinValue="59" MaxValue="61" MeasuredValue="60" />
+            <Result xsi:type="ValueResult" Name="Programmed systole" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="135" MaxValue="135" MeasuredValue="135" />
+            <Result xsi:type="ValueResult" Name="Programmed diastole" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="20" MaxValue="20" MeasuredValue="20" />
+            <Result xsi:type="ValueResult" Name="Programmed Sine amplitude" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="160" MaxValue="160" MeasuredValue="160" />
+            <Result xsi:type="ValueResult" Name="Programmed systole" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="300" MaxValue="300" MeasuredValue="300" />
+            <Result xsi:type="ValueResult" Name="Programmed diastole" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="180" MaxValue="180" MeasuredValue="180" />
+            <Result xsi:type="ValueResult" Name="Programmed Sine amplitude" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="0" MaxValue="0" MeasuredValue="0" />
+            <Result xsi:type="ValueResult" Name="Programmed systole" Remarks="" Conclusion="Failed" Units="mmHg" MinValue="295" MaxValue="295" MeasuredValue="300" />
+            <Result xsi:type="ValueResult" Name="Programmed diastole" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="180" MaxValue="180" MeasuredValue="180" />
+            <Result xsi:type="ValueResult" Name="Programmed Sine amplitude" Remarks="" Conclusion="Failed" Units="mmHg" MinValue="-160" MaxValue="-160" MeasuredValue="0" />
+            <Result xsi:type="ValueResult" Name="Programmed systole" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="140" MaxValue="140" MeasuredValue="140" />
+            <Result xsi:type="ValueResult" Name="Programmed diastole" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="20" MaxValue="20" MeasuredValue="20" />
+            <Result xsi:type="ValueResult" Name="Programmed Sine amplitude" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="0" MaxValue="0" MeasuredValue="0" />
+            <Result xsi:type="BooleanResult" Name="Insufficient Beat-To-Beat data received" Remarks="" Conclusion="Failed" ResultValue="false" />
+          </Results>
+        </TestStep>
+      </Steps>
+    </Test>
+  </Tests>
+</TestSequence>

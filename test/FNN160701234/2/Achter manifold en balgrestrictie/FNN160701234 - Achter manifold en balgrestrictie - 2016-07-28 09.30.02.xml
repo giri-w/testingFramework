@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<TestSequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="RearManifoldBellowRestrictionTestSequence" Name="Achter manifold en balgrestrictie" SerialNumber="FNN160701234" OperatorID="123" PCID="PC449" AddtionalInformationRequestText1="Pomp serienummer" AddtionalInformation1="123" AddtionalInformation2="" Conclusion="Failed">
+  <Tests>
+    <Test xsi:type="LeakageRearTest" Name="Lektest achterkant" Date="2016-07-28T09:29:23.3517662+02:00" Source="FAT-tool; V0.0.0" Conclusion="Failed">
+      <Steps>
+        <TestStep xsi:type="LeakageRearTestStep001" Name="Aansluiten voor lektest achterkant" Conclusion="Failed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Manifold not ready" Remarks="Manifold not in Service Mode" Conclusion="Failed" ResultValue="false" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="LeakageRearTestStep002" Name="Testen van de achterkant op lekkage" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="PumpPerformanceTest" Name="Pomp prestatie test" Date="2016-07-28T09:29:23.3537662+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="PumpPerformanceTestStep001" Name="Aansluiten voor pomp prestatietest" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="PumpPerformanceTestStep002" Name="Pomp prestatie testen" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="FilterBellowTest" Name="Balg restrictie test" Date="2016-07-28T09:29:23.3547662+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="FilterBellowTestStep001" Name="Aansluiten voor filter balg test" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="FilterBellowTestStep002" Name="Balgfilter testen" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+  </Tests>
+</TestSequence>

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE HTML>
+ <html>
+    <head>
+        <title>Test report header</title>
+        <script type="text/javascript">
+            function subst() {
+                var vars = {};
+                var x = window.location.search.substring(1).split('&');
+                for (var i in x) { var z = x[i].split('=', 2); vars[z[0]] = unescape(z[1]); }
+                var x = ['frompage', 'topage', 'page', 'webpage', 'section', 'subsection', 'subsubsection', 'timestamp', 'title'];
+                for (var i in x) {
+                    var y = document.getElementsByClassName(x[i]);
+                    for (var j = 0; j < y.length; ++j) y[j].textContent = vars[x[i]];
+                }
+            }
+        </script>
+        <style type="text/css">
+            body
+            {
+                font-family: Calibri, Verdana, Arial, Sans-Serif;
+                font-size: 11pt;
+                padding-top: 1cm;
+                color: #808080;
+            }
+            table
+            {
+                border-bottom: .5mm solid #808080;
+                width: 100%;
+            }
+            td.title
+            {
+                width: 33%;
+            }
+            td.header-page
+            {
+                width: 33%;
+                text-align: right;
+            }
+            td.timestamp
+            {
+                width: auto;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body onload="subst()">
+        <table>
+            <tr>
+                <td class="title"/>
+                <td class="timestamp"/>
+                <td class="header-page"><span class="page"></span> / <span class="topage"></span></td>
+            </tr>
+        </table>
+    </body>
+</html>

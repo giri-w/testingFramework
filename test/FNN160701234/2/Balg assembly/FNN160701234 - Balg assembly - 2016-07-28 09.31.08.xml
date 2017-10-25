@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<TestSequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="BellowAssemblyTestSequence" Name="Balg assembly" SerialNumber="FNN160701234" OperatorID="123" PCID="PC449" AddtionalInformationRequestText1="PCA serie nummer" AddtionalInformationRequestText2="W100 batch nummer" AddtionalInformation1="123" AddtionalInformation2="123" Conclusion="NotTested">
+  <Tests>
+    <Test xsi:type="PressureSensorsTest" Name="Druksensoren test" Date="2016-07-28T09:30:55.5517662+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="PressureSensorsTestStep001" Name="Aansluiten voor het testen van de druksensoren" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="PressureSensorsTestStep002" Name="Druksensor drukloos testen" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="PressureSensorsTestStep003" Name="Druksensor op druk testen" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="LeakageCompleteTest" Name="Complete lektest" Date="2016-07-28T09:30:55.5517662+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="LeakageCompleteTestStep001" Name="Aansluiten voor volledige lektest" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="LeakageCompleteTestStep002" Name="Testen van het geheel op lekkage" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="FilterExhaustTest" Name="Aflaat restrictie test" Date="2016-07-28T09:30:55.5517662+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="FilterExhaustTestStep001" Name="Aansluiten voor aflaat restrictie test" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="FilterExhaustTestStep002" Name="Aflaatfilter testen" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="CuffValveTest" Name="Cuff Valve test" Date="2016-07-28T09:30:55.5517662+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="CuffValveTestStep001" Name="Aansluiten voor Cuff Valve test" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="CuffValveTestStep002" Name="Cuff valves testen" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="HBridgeLinearityTest" Name="H-brug lineariteitstest" Date="2016-07-28T09:30:55.5527662+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="HBridgeLinearityTestStep001" Name="Aansluiten voor H-brug lineariteitstest" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="HBridgeLinearityTestStep002" Name="H-brug testen" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="VolumeRatioTest" Name="Volume ratio test" Date="2016-07-28T09:30:55.5527662+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="VolumeRatioTestStep001" Name="Aansluiten voor volume ratio test" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="VolumeRatioTestStep002" Name="Volume verhoudingen testen" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="PumpPerformanceCompleteTest" Name="Pomp prestatie test" Date="2016-07-28T09:30:55.5527662+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="PumpPerformanceCompleteTestStep001" Name="Aansluiten voor pomp prestatietest" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="PumpPerformanceCompleteTestStep002" Name="Pomp prestatie testen" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="PressurePulseTest" Name="Drukpuls test" Date="2016-07-28T09:30:55.5537662+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="PressurePulseTestStep001" Name="Aansluiten voor drukpuls test" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="PressurePulseTestStep002" Name="Drukpuls testen" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="TemperatureTest" Name="Temperatuursensor test" Date="2016-07-28T09:30:55.5537662+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="TemperatureTestStep001" Name="Aansluiten voor temperatuurtest" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="TemperatureTestStep002" Name="Temperatuursensor testen" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="AccelerometerTest" Name="Accelerometer test" Date="2016-07-28T09:30:55.5537662+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="AccelerometerTestStep001" Name="Aansluiten voor het testen van de accelerometer" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="AccelerometerTestStep002" Name="Accelerometer testen 1" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="AccelerometerTestStep003" Name="Accelerometer testen 2" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+  </Tests>
+</TestSequence>

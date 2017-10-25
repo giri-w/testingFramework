@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<TestSequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="RearManifoldBellowRestrictionTestSequence" Name="Achter manifold en balgrestrictie" HardwareID="FNC-Proto-17" HardwareIDType="batchnummer" Conclusion="Failed">
+  <Tests>
+    <Test xsi:type="LeakageRearTest" Name="Lektest achterkant" Date="2016-06-10T14:00:35.7634902+02:00" Source="FAT-tool; V0.0.0" Conclusion="Passed">
+      <Steps>
+        <TestStep xsi:type="LeakageRearTestStep001" Name="Aansluiten voor lektest achterkant" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Manifold ready" Remarks="Manifold in Service Mode" Conclusion="Passed" ResultValue="true" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="LeakageRearTestStep002" Name="Testen van de achterkant op lekkage" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Ratio" Remarks="" Conclusion="Passed" Units="" MinValue="0.75" MaxValue="INF" MeasuredValue="0.776" />
+          </Results>
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="PumpPerformanceTest" Name="Pomp prestatie test" Date="2016-06-10T14:00:35.7634902+02:00" Source="FAT-tool; V0.0.0" Conclusion="Failed">
+      <Steps>
+        <TestStep xsi:type="PumpPerformanceTestStep001" Name="Aansluiten voor pomp prestatietest" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Manifold ready" Remarks="Manifold in Service Mode" Conclusion="Passed" ResultValue="true" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="PumpPerformanceTestStep002" Name="Pomp prestatie testen" Conclusion="Failed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Flow in first pulse" Remarks="" Conclusion="Failed" Units="ml/min" MinValue="600" MaxValue="INF" MeasuredValue="477" />
+            <Result xsi:type="ValueResult" Name="Flow at 40 kPa" Remarks="" Conclusion="Failed" Units="ml/min" MinValue="200" MaxValue="INF" MeasuredValue="143" />
+            <Result xsi:type="ValueResult" Name="Restart pressure" Remarks="" Conclusion="Failed" Units="kPa" MinValue="40" MaxValue="INF" MeasuredValue="5.516" />
+          </Results>
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="FilterBellowTest" Name="Balg restrictie test" Date="2016-06-10T14:00:35.7634902+02:00" Source="FAT-tool; V0.0.0" Conclusion="Passed">
+      <Steps>
+        <TestStep xsi:type="FilterBellowTestStep001" Name="Aansluiten voor filter balg test" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Manifold ready" Remarks="Manifold in Service Mode" Conclusion="Passed" ResultValue="true" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="FilterBellowTestStep002" Name="Balgfilter testen" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Deflation time" Remarks="" Conclusion="Passed" Units="s" MinValue="9" MaxValue="13.5" MeasuredValue="11.325" />
+          </Results>
+        </TestStep>
+      </Steps>
+    </Test>
+  </Tests>
+</TestSequence>

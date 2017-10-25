@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<TestSequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="NanoCoreTestSequence" Name="Nano Core tests" SerialNumber="FNN160700015" OperatorID="MJN" PCID="PC484" AddtionalInformationRequestText1="PCA connector serienummer" AddtionalInformationRequestText2="Polsband batchnummer" AddtionalInformation1="01" AddtionalInformation2="01" Conclusion="Failed">
+  <Tests>
+    <Test xsi:type="LEDControllerTest" Name="LED controller test" Date="2016-07-22T11:11:37.8684072+02:00" Source="FAT-tool; V0.0.0" Conclusion="Passed">
+      <Steps>
+        <TestStep xsi:type="LEDControllerTestStep001" Name="Aansluiten voor LED controller test" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Nano Core ready" Remarks="Nano Core in Service Mode" Conclusion="Passed" ResultValue="true" />
+            <Result xsi:type="BooleanResult" Name="Finger Simulator ready" Remarks="Finger Simulator ready" Conclusion="Passed" ResultValue="true" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="LEDControllerTestStep002" Name="LED driver testen" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Mean LED current" Remarks="" Conclusion="Passed" Units="mA" MinValue="34" MaxValue="37" MeasuredValue="34.722" />
+            <Result xsi:type="ValueResult" Name="LED Current st.dev." Remarks="" Conclusion="Passed" Units="mA" MinValue="0" MaxValue="0.1" MeasuredValue="0.067" />
+          </Results>
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="PlethysmographTest" Name="Plethysmograaf test" Date="2016-07-22T11:11:37.8744078+02:00" Source="FAT-tool; V0.0.0" Conclusion="Failed">
+      <Steps>
+        <TestStep xsi:type="PlethysmographTestStep001" Name="Aansluiten voor Plethysmograaf test" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Nano Core ready" Remarks="Nano Core in Service Mode" Conclusion="Passed" ResultValue="true" />
+            <Result xsi:type="BooleanResult" Name="Finger Simulator ready" Remarks="Finger Simulator ready" Conclusion="Passed" ResultValue="true" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="PlethysmographTestStep002" Name="Plethysmograaf testen ondergrens" Conclusion="NotTested">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Beat Profile" Remarks="" Conclusion="Passed" Units="" MinValue="1" MaxValue="1" MeasuredValue="1" />
+            <Result xsi:type="ValueResult" Name="Diastole Pressure" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="124" MaxValue="124" MeasuredValue="124" />
+            <Result xsi:type="ValueResult" Name="Plet offset" Remarks="" Conclusion="NotTested" Units="" MinValue="2.47" MaxValue="2.47" MeasuredValue="NaN" />
+            <Result xsi:type="ValueResult" Name="Plethysmograph mean with gain off" Remarks="" Conclusion="Passed" Units="nA" MinValue="10" MaxValue="100" MeasuredValue="87" />
+            <Result xsi:type="ValueResult" Name="Plethysmograph mean with gain on" Remarks="" Conclusion="Passed" Units="nA" MinValue="10" MaxValue="100" MeasuredValue="87" />
+            <Result xsi:type="ValueResult" Name="Plethysmograph st.dev. with gain on" Remarks="" Conclusion="Passed" Units="nA" MinValue="0" MaxValue="1.5" MeasuredValue="0.048" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="PlethysmographTestStep003" Name="Plethysmograaf testen midden" Conclusion="Failed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Beat Profile" Remarks="" Conclusion="Failed" Units="" MinValue="1" MaxValue="1" MeasuredValue="0" />
+            <Result xsi:type="ValueResult" Name="Diastole Pressure" Remarks="" Conclusion="Failed" Units="mmHg" MinValue="124" MaxValue="124" MeasuredValue="0" />
+            <Result xsi:type="ValueResult" Name="Plet offset" Remarks="" Conclusion="NotTested" Units="" MinValue="15.43" MaxValue="15.43" MeasuredValue="NaN" />
+            <Result xsi:type="ValueResult" Name="Plethysmograph mean with gain off" Remarks="" Conclusion="Passed" Units="nA" MinValue="2100" MaxValue="2200" MeasuredValue="2147" />
+            <Result xsi:type="ValueResult" Name="Plethysmograph mean with gain on" Remarks="" Conclusion="Passed" Units="nA" MinValue="7450" MaxValue="7550" MeasuredValue="7501" />
+            <Result xsi:type="ValueResult" Name="Plethysmograph st.dev. with gain on" Remarks="" Conclusion="Passed" Units="nA" MinValue="0" MaxValue="1.5" MeasuredValue="0.306" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="PlethysmographTestStep004" Name="Plethysmograaf testen bovengrens" Conclusion="NotTested">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Beat Profile" Remarks="" Conclusion="Passed" Units="" MinValue="1" MaxValue="1" MeasuredValue="1" />
+            <Result xsi:type="ValueResult" Name="Diastole Pressure" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="124" MaxValue="124" MeasuredValue="124" />
+            <Result xsi:type="ValueResult" Name="Plet offset" Remarks="" Conclusion="NotTested" Units="" MinValue="28.15" MaxValue="28.15" MeasuredValue="NaN" />
+            <Result xsi:type="ValueResult" Name="Plethysmograph mean with gain off" Remarks="" Conclusion="Passed" Units="nA" MinValue="4150" MaxValue="4250" MeasuredValue="4202" />
+            <Result xsi:type="ValueResult" Name="Plethysmograph mean with gain on" Remarks="" Conclusion="Passed" Units="nA" MinValue="14350" MaxValue="14450" MeasuredValue="14373" />
+            <Result xsi:type="ValueResult" Name="Plethysmograph st.dev. with gain on" Remarks="" Conclusion="Passed" Units="nA" MinValue="0" MaxValue="1.5" MeasuredValue="1.099" />
+          </Results>
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="HCUAmplifierTest" Name="HCU versterker test" Date="2016-07-22T11:11:37.8754079+02:00" Source="FAT-tool; V0.0.0" Conclusion="Passed">
+      <Steps>
+        <TestStep xsi:type="HCUAmplifierTestStep001" Name="Aansluiten voor HCU versterker test" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Nano Core ready" Remarks="Nano Core in Service Mode" Conclusion="Passed" ResultValue="true" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="HCUAmplifierTestStep002" Name="HCU versterker testen op -75 mmHg" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Mean HCU pressure" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="-77" MaxValue="-73" MeasuredValue="-75.856999999999971" />
+            <Result xsi:type="ValueResult" Name="HCU pressure st.dev." Remarks="" Conclusion="Passed" Units="mmHg" MinValue="0" MaxValue="0.16" MeasuredValue="0.108" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="HCUAmplifierTestStep003" Name="HCU versterker testen op 0 mmHg" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Mean HCU pressure" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="-2" MaxValue="2" MeasuredValue="-0.28499999999996817" />
+            <Result xsi:type="ValueResult" Name="HCU pressure st.dev." Remarks="" Conclusion="Passed" Units="mmHg" MinValue="0" MaxValue="0.16" MeasuredValue="0.099" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="HCUAmplifierTestStep004" Name="HCU versterker testen op 75 mmHg" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Mean HCU pressure" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="73" MaxValue="77" MeasuredValue="74.825000000000045" />
+            <Result xsi:type="ValueResult" Name="HCU pressure st.dev." Remarks="" Conclusion="Passed" Units="mmHg" MinValue="0" MaxValue="0.16" MeasuredValue="0.111" />
+          </Results>
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="TemperatureCompleteTest" Name="Temperatuursensor test" Date="2016-07-22T11:11:37.8774081+02:00" Source="FAT-tool; V0.0.0" Conclusion="Passed">
+      <Steps>
+        <TestStep xsi:type="TemperatureCompleteTestStep001" Name="Aansluiten voor temperatuurtest" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Nano Core ready" Remarks="Nano Core in Service Mode" Conclusion="Passed" ResultValue="true" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="TemperatureCompleteTestStep002" Name="Temperatuursensor testen" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="User input temperature" Remarks="" Conclusion="Passed" Units="°C" MinValue="15" MaxValue="50" MeasuredValue="23.200000762939453" />
+            <Result xsi:type="ValueResult" Name="Mean temperature" Remarks="" Conclusion="Passed" Units="°C" MinValue="23.200000762939453" MaxValue="35.200000762939453" MeasuredValue="25.719" />
+            <Result xsi:type="ValueResult" Name="St.dev. temperature" Remarks="" Conclusion="Passed" Units="°C" MinValue="0" MaxValue="0.1" MeasuredValue="0.011" />
+          </Results>
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="GroundImpendanceTest" Name="Electrische aarde test" Date="2016-07-22T11:11:37.8784082+02:00" Source="FAT-tool; V0.0.0" Conclusion="Passed">
+      <Steps>
+        <TestStep xsi:type="GroundImpendanceTestStep001" Name="Meten van de electrische aarde impendantie" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="User input impendance" Remarks="" Conclusion="Passed" Units="mOhm" MinValue="0" MaxValue="1000" MeasuredValue="350" />
+          </Results>
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="EndTestCuffDeflation" Name="Eindtest leeglopen Cuff" Date="2016-07-22T11:11:37.8794083+02:00" Source="FAT-tool; V0.0.0" Conclusion="Failed">
+      <Steps>
+        <TestStep xsi:type="EndTestCuffDeflationStep001" Name="Aansluiten voor eindtest leeglopen Cuff 1" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Nano Core ready" Remarks="Nano Core in Service Mode" Conclusion="Passed" ResultValue="true" />
+            <Result xsi:type="BooleanResult" Name="Finger Simulator ready" Remarks="Finger Simulator ready" Conclusion="Passed" ResultValue="true" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="EndTestCuffDeflationStep002" Name="Cuff 1 op druk brengen" Conclusion="Failed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Current Cuff: Cuff1" Remarks="" Conclusion="Passed" ResultValue="true" />
+            <Result xsi:type="ValueResult" Name="Cuff Pressure" Remarks="" Conclusion="Failed" Units="mmHg" MinValue="249" MaxValue="251" MeasuredValue="-0.26120816366195387" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="EndTestCuffDeflationStep003" Name="Cuff 1 leeglopen met afgesloten luchtfilter" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Current Cuff: Cuff1" Remarks="" Conclusion="Passed" ResultValue="true" />
+            <Result xsi:type="ValueResult" Name="Cuff Pressure" Remarks="" Conclusion="Passed" Units="mmHg" MinValue="-15" MaxValue="15" MeasuredValue="-0.26120816366195387" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="EndTestCuffDeflationStep004" Name="Cuff 2 op druk brengen" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="EndTestCuffDeflationStep005" Name="Cuff 2 leeglopen met afgesloten luchtfilter" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="EndTestRiseFallTime" Name="Eindtest drukrijs en -valtijd" Date="2016-07-22T11:11:37.8814085+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="EndTestRiseFallTimeStep001" Name="Aansluiten voor eindtest Cuff 1" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="EndTestRiseFallTimeStep002" Name="Cuff 1 drukreactietijd bepalen" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="EndTestRiseFallTimeStep003" Name="Cuff 2 drukreactietijd bepalen" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="EndTestPerformance" Name="Eindtest prestatie" Date="2016-07-22T11:11:37.8834087+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="EndTestPerformanceStep001" Name="Aansluiten voor eindtest Cuff 1" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="EndTestPerformanceStep002" Name="Cuff 1 normale meetprestatie" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="EndTestPerformanceStep003" Name="Cuff 1 meetprestatie bij extreme MAP verandering" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="EndTestPerformanceStep004" Name="Cuff 2 normale meetprestatie" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="EndTestPerformanceStep005" Name="Cuff 2 meetprestatie bij extreme MAP verandering" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+  </Tests>
+</TestSequence>

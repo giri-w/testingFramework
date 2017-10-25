@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<TestSequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="BellowAssemblyTestSequence" Name="Balg assembly" SerialNumber="FNN160600015" OperatorID="MJN" AddtionalInformationRequestText1="PCA serie nummer" AddtionalInformationRequestText2="W100 batch nummer" AddtionalInformation1="01" AddtionalInformation2="01" Conclusion="Failed">
+  <Tests>
+    <Test xsi:type="PressureSensorsTest" Name="Druksensoren test" Date="2016-07-08T13:48:53.9489541+02:00" Source="FAT-tool; V0.0.0" Conclusion="NotTested">
+      <Steps>
+        <TestStep xsi:type="PressureSensorsTestStep001" Name="Aansluiten voor het testen van de druksensoren" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="PressureSensorsTestStep002" Name="Druksensor drukloos testen" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+        <TestStep xsi:type="PressureSensorsTestStep003" Name="Druksensor op druk testen" Conclusion="NotTested">
+          <Results />
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="LeakageCompleteTest" Name="Complete lektest" Date="2016-07-08T13:48:53.9509543+02:00" Source="FAT-tool; V0.0.0" Conclusion="Passed">
+      <Steps>
+        <TestStep xsi:type="LeakageCompleteTestStep001" Name="Aansluiten voor volledige lektest" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Manifold ready" Remarks="Manifold in Service Mode" Conclusion="Passed" ResultValue="true" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="LeakageCompleteTestStep002" Name="Testen van het geheel op lekkage" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Ratio" Remarks="" Conclusion="Passed" Units="" MinValue="0.75" MaxValue="INF" MeasuredValue="0.8" />
+          </Results>
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="FilterExhaustTest" Name="Aflaat restrictie test" Date="2016-07-08T13:48:53.9519544+02:00" Source="FAT-tool; V0.0.0" Conclusion="Passed">
+      <Steps>
+        <TestStep xsi:type="FilterExhaustTestStep001" Name="Aansluiten voor aflaat restrictie test" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Manifold ready" Remarks="Manifold in Service Mode" Conclusion="Passed" ResultValue="true" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="FilterExhaustTestStep002" Name="Aflaatfilter testen" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Time" Remarks="" Conclusion="Passed" Units="s" MinValue="0.9" MaxValue="1.4" MeasuredValue="1.015" />
+          </Results>
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="CuffValveTest" Name="Cuff Valve test" Date="2016-07-08T13:48:53.9539546+02:00" Source="FAT-tool; V0.0.0" Conclusion="Passed">
+      <Steps>
+        <TestStep xsi:type="CuffValveTestStep001" Name="Aansluiten voor Cuff Valve test" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Manifold ready" Remarks="Manifold in Service Mode" Conclusion="Passed" ResultValue="true" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="CuffValveTestStep002" Name="Cuff valves testen" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Cuff 1 deflation time" Remarks="" Conclusion="Passed" Units="ms" MinValue="0" MaxValue="40" MeasuredValue="10" />
+            <Result xsi:type="ValueResult" Name="Cuff 2 deflation time" Remarks="" Conclusion="Passed" Units="ms" MinValue="0" MaxValue="40" MeasuredValue="20" />
+            <Result xsi:type="ValueResult" Name="Deflation time 40kPa - 20kPa" Remarks="" Conclusion="Passed" Units="s" MinValue="3.55" MaxValue="4.35" MeasuredValue="3.915" />
+            <Result xsi:type="ValueResult" Name="Deflation time 13.3kPa - 6.6kPa" Remarks="" Conclusion="Passed" Units="s" MinValue="3.05" MaxValue="3.75" MeasuredValue="3.245" />
+          </Results>
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="HBridgeLinearityTest" Name="H-brug lineariteitstest" Date="2016-07-08T13:48:53.9549547+02:00" Source="FAT-tool; V0.0.0" Conclusion="Passed">
+      <Steps>
+        <TestStep xsi:type="HBridgeLinearityTestStep001" Name="Aansluiten voor H-brug lineariteitstest" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Manifold ready" Remarks="Manifold in Service Mode" Conclusion="Passed" ResultValue="true" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="HBridgeLinearityTestStep002" Name="H-brug testen" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Impedance" Remarks="" Conclusion="Passed" Units="Ohm" MinValue="8.5" MaxValue="9.1" MeasuredValue="8.903" />
+            <Result xsi:type="ValueResult" Name="Remaining Current" Remarks="" Conclusion="Passed" Units="mA" MinValue="0" MaxValue="50" MeasuredValue="20" />
+          </Results>
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="VolumeRatioTest" Name="Volume ratio test" Date="2016-07-08T13:48:53.9559548+02:00" Source="FAT-tool; V0.0.0" Conclusion="Passed">
+      <Steps>
+        <TestStep xsi:type="VolumeRatioTestStep001" Name="Aansluiten voor volume ratio test" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Manifold ready" Remarks="Manifold in Service Mode" Conclusion="Passed" ResultValue="true" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="VolumeRatioTestStep002" Name="Volume verhoudingen testen" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Plunger constant" Remarks="" Conclusion="Passed" Units="kPa/A" MinValue="19.35" MaxValue="23.65" MeasuredValue="21.948" />
+            <Result xsi:type="ValueResult" Name="Volume ratio" Remarks="" Conclusion="Passed" Units="" MinValue="4.1" MaxValue="4.5" MeasuredValue="4.362" />
+          </Results>
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="PumpPerformanceCompleteTest" Name="Pomp prestatie test" Date="2016-07-08T13:48:53.9569549+02:00" Source="FAT-tool; V0.0.0" Conclusion="Passed">
+      <Steps>
+        <TestStep xsi:type="PumpPerformanceCompleteTestStep001" Name="Aansluiten voor pomp prestatietest" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Manifold ready" Remarks="Manifold in Service Mode" Conclusion="Passed" ResultValue="true" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="PumpPerformanceCompleteTestStep002" Name="Pomp prestatie testen" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Flow in first pulse" Remarks="" Conclusion="Passed" Units="ml/min" MinValue="540" MaxValue="INF" MeasuredValue="686" />
+            <Result xsi:type="ValueResult" Name="Flow at 40 kPa" Remarks="" Conclusion="Passed" Units="ml/min" MinValue="76.6" MaxValue="INF" MeasuredValue="195" />
+            <Result xsi:type="ValueResult" Name="Restart pressure" Remarks="" Conclusion="Passed" Units="kPa" MinValue="40" MaxValue="INF" MeasuredValue="54.831" />
+          </Results>
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="PressurePulseTest" Name="Drukpuls test" Date="2016-07-08T13:48:53.9569549+02:00" Source="FAT-tool; V0.0.0" Conclusion="Failed">
+      <Steps>
+        <TestStep xsi:type="PressurePulseTestStep001" Name="Aansluiten voor drukpuls test" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Manifold ready" Remarks="Manifold in Service Mode" Conclusion="Passed" ResultValue="true" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="PressurePulseTestStep002" Name="Drukpuls testen" Conclusion="Failed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="First pulse pressure" Remarks="" Conclusion="Failed" Units="kPa" MinValue="8.9" MaxValue="INF" MeasuredValue="8.69" />
+            <Result xsi:type="ValueResult" Name="Maximum pulse pressure" Remarks="" Conclusion="Passed" Units="kPa" MinValue="16.5" MaxValue="INF" MeasuredValue="20.288" />
+          </Results>
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="TemperatureTest" Name="Temperatuursensor test" Date="2016-07-08T13:48:53.957955+02:00" Source="FAT-tool; V0.0.0" Conclusion="Failed">
+      <Steps>
+        <TestStep xsi:type="TemperatureTestStep001" Name="Aansluiten voor temperatuurtest" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Manifold ready" Remarks="Manifold in Service Mode" Conclusion="Passed" ResultValue="true" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="TemperatureTestStep002" Name="Temperatuursensor testen" Conclusion="Failed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="User input temperature" Remarks="" Conclusion="Passed" Units="°C" MinValue="15" MaxValue="50" MeasuredValue="21.5" />
+            <Result xsi:type="ValueResult" Name="Mean temperature" Remarks="" Conclusion="Failed" Units="°C" MinValue="21" MaxValue="22" MeasuredValue="33.401" />
+            <Result xsi:type="ValueResult" Name="St.dev. temperature" Remarks="" Conclusion="Passed" Units="°C" MinValue="0" MaxValue="0.1" MeasuredValue="0.012" />
+          </Results>
+        </TestStep>
+      </Steps>
+    </Test>
+    <Test xsi:type="AccelerometerTest" Name="Accelerometer test" Date="2016-07-08T13:48:53.9599552+02:00" Source="FAT-tool; V0.0.0" Conclusion="Failed">
+      <Steps>
+        <TestStep xsi:type="AccelerometerTestStep001" Name="Aansluiten voor het testen van de accelerometer" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="BooleanResult" Name="Manifold ready" Remarks="Manifold in Service Mode" Conclusion="Passed" ResultValue="true" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="AccelerometerTestStep002" Name="Accelerometer testen 1" Conclusion="Failed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Mean accelerometer" Remarks="" Conclusion="Failed" Units="m/s2" MinValue="9.6" MaxValue="10" MeasuredValue="-9.6359999999999673" />
+            <Result xsi:type="ValueResult" Name="St.dev. accelerometer" Remarks="" Conclusion="Passed" Units="m/s2" MinValue="0" MaxValue="0.1" MeasuredValue="0.078" />
+          </Results>
+        </TestStep>
+        <TestStep xsi:type="AccelerometerTestStep003" Name="Accelerometer testen 2" Conclusion="Passed">
+          <Results>
+            <Result xsi:type="ValueResult" Name="Mean accelerometer" Remarks="" Conclusion="Passed" Units="m/s2" MinValue="-10" MaxValue="-9.6" MeasuredValue="-9.6420000000000528" />
+            <Result xsi:type="ValueResult" Name="St.dev. accelerometer" Remarks="" Conclusion="Passed" Units="m/s2" MinValue="0" MaxValue="0.1" MeasuredValue="0.077" />
+          </Results>
+        </TestStep>
+      </Steps>
+    </Test>
+  </Tests>
+</TestSequence>

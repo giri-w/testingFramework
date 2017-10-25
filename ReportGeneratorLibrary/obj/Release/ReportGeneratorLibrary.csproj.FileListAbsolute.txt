@@ -1,0 +1,9 @@
+C:\svn\522_Finapres_NanoCore_Driver\ReportGenerator\ReportGeneratorLibrary\bin\Release\dep\wkhtmltopdf.exe
+C:\svn\522_Finapres_NanoCore_Driver\ReportGenerator\ReportGeneratorLibrary\bin\Release\Report\Logo.png
+C:\svn\522_Finapres_NanoCore_Driver\ReportGenerator\ReportGeneratorLibrary\bin\Release\Report\Report.css
+C:\svn\522_Finapres_NanoCore_Driver\ReportGenerator\ReportGeneratorLibrary\bin\Release\Report\Report.xslt
+C:\svn\522_Finapres_NanoCore_Driver\ReportGenerator\ReportGeneratorLibrary\bin\Release\Report\ReportHeader.html
+C:\svn\522_Finapres_NanoCore_Driver\ReportGenerator\ReportGeneratorLibrary\bin\Release\ReportGeneratorLibrary.dll
+C:\svn\522_Finapres_NanoCore_Driver\ReportGenerator\ReportGeneratorLibrary\bin\Release\ReportGeneratorLibrary.pdb
+C:\svn\522_Finapres_NanoCore_Driver\ReportGenerator\ReportGeneratorLibrary\obj\Release\ReportGeneratorLibrary.dll
+C:\svn\522_Finapres_NanoCore_Driver\ReportGenerator\ReportGeneratorLibrary\obj\Release\ReportGeneratorLibrary.pdb
